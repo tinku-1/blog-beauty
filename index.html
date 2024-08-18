@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kavya's Beauty Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', Georgia, serif;
+            line-height: 1.6;
+            background-color: #fff3e0; 
+            color: #33badc; 
+        }
+
+        header {
+            background: linear-gradient(135deg, #f3ec19, #ff4500); /* Rich reds and oranges */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Merriweather', Georgia, serif;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #ffd700; 
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        main article {
+            background-color: #fffaf0; 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #c2eb46; 
+        }
+
+        main article img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        main article .meta {
+            color: #e761b3;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        main article .read-more {
+            background: linear-gradient(135deg, #f650d2, #ff4500);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+
+        main article .read-more:hover {
+            background: linear-gradient(135deg, #ff4500, #ff6347);
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        aside section {
+            background-color: #fffaf0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d2691e;
+        }
+
+        aside section h3 {
+            margin-bottom: 15px;
+        }
+
+        aside section ul {
+            list-style-type: none;
+        }
+
+        aside section ul li {
+            margin-bottom: 10px;
+        }
+
+        aside section ul li a {
+            color: #38e07b;
+            text-decoration: none;
+        }
+
+        aside section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #cde545, #ff4500);
+            color: #ffd700;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media a {
+            color: #ffd700;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>kavya's Beauty Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Glowing Skin: Top Beauty Secrets</h2>
+                <p class="meta">by <strong>kavya</strong> on August 15, 2023</p>
+                <img src="glowing-skin.png" alt="Beauty Blog image">
+                <p>Having glowing skin is a top priority for many, but it takes more than just good genes to achieve. 
+                   From proper hydration to the right skincare routine, a glowing complexion is within reach for anyone. 
+                   Today, we'll dive into some top beauty secrets that can help you achieve radiant skin. 
+                   These tips include using natural products, staying consistent with your skincare routine, and ensuring you get plenty of sleep. 
+                   Remember, beauty comes from within, so a healthy diet and a positive mindset are just as important as any beauty product.</p>
+                <button class="read-more">Read More</button>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="https://thedermreview.com/natural-face-masks/">Best Natural Face Masks</a></li>
+                    <li><a href="https://www.bebeautiful.in/all-things-skin/everyday/natural-face-beauty-tips-for-glowing-skin">Top 10 Beauty Tips</a></li>
+                    <li><a href="https://www.masterclass.com/articles/how-to-build-a-skin-care-routine">Skincare Routine for All Skin Types</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Beauty Categories</h3>
+                <ul>
+                    <li><a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/skin-care/art-20048237">Skincare</a></li>
+                    <li><a href="https://www.sephora.com/shop/makeup-cosmetics?msockid=0c3a927d88af69f3036381f989026865">Makeup</a></li>
+                    <li><a href="https://www.mindbodygreen.com/articles/hair-care-routine">Haircare</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; kavya's Beauty Blog. All rights reserved by Varun</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/home">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
